@@ -21,6 +21,7 @@
 		357B6F4E17F9C8ED001BAB31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357B6F3017F9C8EC001BAB31 /* UIKit.framework */; };
 		357B6F5617F9C8ED001BAB31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 357B6F5417F9C8ED001BAB31 /* InfoPlist.strings */; };
 		357B6F5817F9C8ED001BAB31 /* _BallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 357B6F5717F9C8ED001BAB31 /* _BallTests.m */; };
+		357B6F6317F9F37C001BAB31 /* DecisionMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 357B6F6217F9F37C001BAB31 /* DecisionMaker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		357B6F5317F9C8ED001BAB31 /* 8BallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "8BallTests-Info.plist"; sourceTree = "<group>"; };
 		357B6F5517F9C8ED001BAB31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		357B6F5717F9C8ED001BAB31 /* _BallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _BallTests.m; sourceTree = "<group>"; };
+		357B6F6117F9F37C001BAB31 /* DecisionMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecisionMaker.h; sourceTree = "<group>"; };
+		357B6F6217F9F37C001BAB31 /* DecisionMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecisionMaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		357B6F3217F9C8EC001BAB31 /* 8Ball */ = {
 			isa = PBXGroup;
 			children = (
+				357B6F6117F9F37C001BAB31 /* DecisionMaker.h */,
+				357B6F6217F9F37C001BAB31 /* DecisionMaker.m */,
 				357B6F3B17F9C8EC001BAB31 /* _BallAppDelegate.h */,
 				357B6F3C17F9C8EC001BAB31 /* _BallAppDelegate.m */,
 				357B6F3E17F9C8EC001BAB31 /* Main.storyboard */,
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357B6F6317F9F37C001BAB31 /* DecisionMaker.m in Sources */,
 				357B6F4317F9C8EC001BAB31 /* _BallViewController.m in Sources */,
 				357B6F3917F9C8EC001BAB31 /* main.m in Sources */,
 				357B6F3D17F9C8EC001BAB31 /* _BallAppDelegate.m in Sources */,

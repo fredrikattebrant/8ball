@@ -7,22 +7,29 @@
 //
 
 #import "_BallViewController.h"
+#import "DecisionMaker.h"
 
 @interface _BallViewController ()
 
 @end
 
-@implementation _BallViewController
+@implementation _BallViewController {
+    DecisionMaker *answerSource;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+	// Initialize the UI
     self.answerLabel.text = @"Need an answer? Hit the button";
     self.answerLabel.textAlignment = NSTextAlignmentCenter;
     
     [self.answerButton setTitle:@"Get an answer" forState:UIControlStateNormal];
     [self.answerButton setTitle:@"Thinking..." forState:UIControlStateHighlighted];
+    
+    // Initialize the decision maker
+    answerSource = [[DecisionMaker alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -32,6 +39,6 @@
 }
 
 - (IBAction)answerButtonPressed:(UIButton *)sender {
-    self.answerLabel.text = @"You pressed the button!";
+    self.answerLabel.text = [answerSource getRandomAnswer];
 }
 @end
