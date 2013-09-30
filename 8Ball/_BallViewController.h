@@ -10,4 +10,9 @@
 
 @interface _BallViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
+@property (weak, nonatomic) IBOutlet UIButton *answerButton;
+
+- (IBAction)answerButtonPressed:(UIButton *)sender;
+
 @end
